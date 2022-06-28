@@ -1,0 +1,31 @@
+.lists{
+    position: relative;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 30px;
+    top: 30px;
+}
+#cher{
+    position: absolute;
+    top: 6px;
+    left: 400px;
+    background-color: blue;
+    color: white;
+    border-color: transparent;
+    border-radius: 10px;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.hd{
+    position: absolute;
+    left: 700px;
+    top: 10px;
+}
+.flex {
+    display: flex;
+    align-items: center;
+}
+.cut{
+    text-decoration: line-through;
+}

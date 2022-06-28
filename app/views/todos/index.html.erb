@@ -1,0 +1,12 @@
+
+<div class="input-group flex-nowrap">
+     <h1 class="head">My Todo-Lists
+     </h1>
+    <form action="/a" method="post">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <input type="text" class="form-control" id="firs-in" name="todos[task]"  placeholder="Enter your task" required>
+   <input type="date" class="form-control" id="dte" name="todos[date]" required>
+   <button type="Submit" class="btn btn-primary">Add
+   </button>
+   </form>
+</div>

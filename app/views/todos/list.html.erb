@@ -1,0 +1,34 @@
+
+ <section class="TodoSection">
+         
+          <ul>
+          <% @todos.each do |todo| %>
+           <li class="TodoItem">
+            <label class="TodoItem-container">
+            <%= form_with(url: "/todos/#{todo.id}", method: "put") do %>
+            <%= check_box_tag "completed", nil, checked = todo.completed ? true : false, class: "TodoItem-checkbox", onclick: "this.form.submit()" %>
+            <% end %>
+            <p class= <%= (todo.completed) ? "cut" : "" %> >
+              <%= todo.task %>
+            </p>
+              <p class="TodoItem-dueDate">
+              <%= todo.date.to_formatted_s(:short) %>
+           </p>
+            <%= form_with(url: "/todos/#{todo.id}", class: "TodoItem-delete", method: "delete") do %>
+              <%= image_submit_tag("trashCan.png", class: "TodoItem-trashIcon")%>
+            <% end %>
+           </label>
+           </li>
+          <% end %>
+          </ul>
+        </section>
+
+
+
+
+
+
+
+
+
+

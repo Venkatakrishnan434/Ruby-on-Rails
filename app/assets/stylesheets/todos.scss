@@ -1,0 +1,31 @@
+// Place all the styles related to the todos controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+
+.head{
+    position: absolute;
+    font-size: 30px;
+    left: 680px;
+    top: 100px;
+}
+#firs-in{
+    position: absolute;
+    left: 580px;
+    width: 400px;
+    top: 170px;
+}
+#dte{
+    position: absolute;
+    left: 1000px;
+    width: 45px;
+    top: 170px;
+    cursor: pointer;
+}
+.btn{
+    position: absolute;
+    left: 580px;
+    top: 250px;
+}
+
